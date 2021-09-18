@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+//check dữ liệU nhậN về
 TodoList.propTypes = {
   todos: PropTypes.array,
   onTodoClick: PropTypes.func,
@@ -12,6 +13,7 @@ TodoList.defaultProps = {
 };
 
 function TodoList(props) {
+  //object destructuring
   const { todos, onTodoClick } = props;
 
   function handleClick(todo) {

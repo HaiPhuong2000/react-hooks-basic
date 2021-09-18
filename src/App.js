@@ -13,7 +13,9 @@ function App() {
   function handleTodoclick(todo) {
     const index = todoList.findIndex((x) => x.id === todo.id);
     if (index < 0) return;
+    //clone new array
     const newTodoList = [...todoList];
+    //Cắt phần 1 phần tử ở vị trí index
     newTodoList.splice(index, 1);
     setTodoList(newTodoList);
   }
