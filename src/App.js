@@ -4,6 +4,7 @@ import Pagination from "./components/Pagination";
 import PostList from "./components/PostList";
 import PostFilterForm from "./components/PostFilterForm";
 import Clock from "./components/Clock";
+import MagicBox from "./components/MagicBox";
 // import TodoList from "./components/Todo";
 // import TodoForm from "./components/TodoForm";
 // import ColorBox from "./components/ColorBox/ColorBox";
@@ -93,8 +94,9 @@ function App() {
       <PostList posts={postList} />\
       <Pagination pagination={pagination} onPageChange={handlePageChange} /> */}
 
-      {showClock && <Clock />}
-      <button onClick={() => setShowClock(false)}>Hide Clock</button>
+      {/* {showClock && <Clock />}
+      <button onClick={() => setShowClock(false)}>Hide Clock</button> */}
+      <MagicBox />
     </div>
   );
 }
